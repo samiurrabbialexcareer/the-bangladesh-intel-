@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .news-card {
+    @apply bg-white border border-border rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition-colors shadow-sm;
+  }
+
+  .section-heading {
+    @apply text-2xl font-heading font-bold mb-6 border-l-4 border-primary pl-3 text-text;
+  }
+}
